@@ -217,14 +217,14 @@ if __name__ == "__main__":
     model = DuplicateDetectionModel(similarity_threshold=0.85)
     
     # 예시: 문서 추가 및 중복 확인
-    doc1_result = model.add_document('path/to/document1.pdf', 'doc1')
+    doc1_result = model.add_document('c:/Users/Lenovo/Desktop/code/Git/AI-from-basic/Block_Chein/doc1.pdf', 'doc1')
     print(f"Document 1 result: {doc1_result}")
     
-    doc2_result = model.add_document('path/to/document2.pdf', 'doc2')
+    doc2_result = model.add_document('c:/Users/Lenovo/Desktop/code/Git/AI-from-basic/Block_Chein/doc2.pdf', 'doc2')
     print(f"Document 2 result: {doc2_result}")
     
     # 유사 문서 찾기
-    similar_docs = model.get_most_similar_documents('path/to/query_doc.pdf', top_k=3)
+    similar_docs = model.get_most_similar_documents('c:/Users/Lenovo/Desktop/code/Git/AI-from-basic/Block_Chein/doc3.pdf', top_k=3)
     print(f"Similar documents: {similar_docs}")
     
     # 모델 저장
