@@ -354,9 +354,9 @@ if __name__ == "__main__":
     
     # 훈련 데이터 예시 (파일경로, 카테고리)
     train_data = [
-        ('path/to/doc1.pdf', '기술'),
-        ('path/to/doc2.pdf', '과학'),
-        ('path/to/doc3.pdf', '경제'),
+        ('c:/Users/Lenovo/Desktop/code/Git/AI-from-basic/Block_Chein/doc1.pdf', '기술'),
+        ('c:/Users/Lenovo/Desktop/code/Git/AI-from-basic/Block_Chein/doc2.pdf', '과학'),
+        ('c:/Users/Lenovo/Desktop/code/Git/AI-from-basic/Block_Chein/doc3.pdf', '경제'),
         # ... 다른 훈련 데이터
     ]
     
@@ -371,10 +371,10 @@ if __name__ == "__main__":
     new_classifier.load_model('document_classifier_model')
     
     # 문서 분류
-    result = new_classifier.predict('path/to/new_document.pdf')
+    result = new_classifier.predict('c:/Users/Lenovo/Desktop/code/Git/AI-from-basic/Block_Chein/new_document.pdf')
     print(f"Predicted category: {result['predicted_category']} with confidence: {result['confidence']}")
     print(f"Top categories: {result['top_categories']}")
     
     # 키워드 추출
-    keywords = new_classifier.extract_keywords('path/to/new_document.pdf')
+    keywords = new_classifier.extract_keywords('c:/Users/Lenovo/Desktop/code/Git/AI-from-basic/Block_Chein/new_document.pdf')
     print(f"Keywords: {keywords}")
